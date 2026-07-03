@@ -1,0 +1,904 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "word": "Dog",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/dog.png",
+      "audio": "res://assets/audio/voice/dog.wav",
+      "enabled": true
+    },
+    {
+      "id": 2,
+      "word": "Cat",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/cat.png",
+      "audio": "res://assets/audio/voice/cat.wav",
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "word": "Pig",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/pig.png",
+      "audio": "res://assets/audio/voice/pig.wav",
+      "enabled": true
+    },
+    {
+      "id": 4,
+      "word": "Cow",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/cow.png",
+      "audio": "res://assets/audio/voice/cow.wav",
+      "enabled": true
+    },
+    {
+      "id": 5,
+      "word": "Duck",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/duck.png",
+      "audio": "res://assets/audio/voice/duck.wav",
+      "enabled": true
+    },
+    {
+      "id": 6,
+      "word": "Fish",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/fish.png",
+      "audio": "res://assets/audio/voice/fish.wav",
+      "enabled": true
+    },
+    {
+      "id": 7,
+      "word": "Bird",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/bird.png",
+      "audio": "res://assets/audio/voice/bird.wav",
+      "enabled": true
+    },
+    {
+      "id": 8,
+      "word": "Horse",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/horse.png",
+      "audio": "res://assets/audio/voice/horse.wav",
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "word": "Sheep",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/sheep.png",
+      "audio": "res://assets/audio/voice/sheep.wav",
+      "enabled": true
+    },
+    {
+      "id": 10,
+      "word": "Rabbit",
+      "category": "Animals",
+      "difficulty": 2,
+      "image": "res://assets/words/rabbit.png",
+      "audio": "res://assets/audio/voice/rabbit.wav",
+      "enabled": true
+    },
+    {
+      "id": 11,
+      "word": "Frog",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/frog.png",
+      "audio": "res://assets/audio/voice/frog.wav",
+      "enabled": true
+    },
+    {
+      "id": 12,
+      "word": "Bear",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/bear.png",
+      "audio": "res://assets/audio/voice/bear.wav",
+      "enabled": true
+    },
+    {
+      "id": 13,
+      "word": "Lion",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/lion.png",
+      "audio": "res://assets/audio/voice/lion.wav",
+      "enabled": true
+    },
+    {
+      "id": 14,
+      "word": "Tiger",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/tiger.png",
+      "audio": "res://assets/audio/voice/tiger.wav",
+      "enabled": true
+    },
+    {
+      "id": 15,
+      "word": "Monkey",
+      "category": "Animals",
+      "difficulty": 2,
+      "image": "res://assets/words/monkey.png",
+      "audio": "res://assets/audio/voice/monkey.wav",
+      "enabled": true
+    },
+    {
+      "id": 16,
+      "word": "Elephant",
+      "category": "Animals",
+      "difficulty": 2,
+      "image": "res://assets/words/elephant.png",
+      "audio": "res://assets/audio/voice/elephant.wav",
+      "enabled": true
+    },
+    {
+      "id": 17,
+      "word": "Mouse",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/mouse.png",
+      "audio": "res://assets/audio/voice/mouse.wav",
+      "enabled": true
+    },
+    {
+      "id": 18,
+      "word": "Snake",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/snake.png",
+      "audio": "res://assets/audio/voice/snake.wav",
+      "enabled": true
+    },
+    {
+      "id": 19,
+      "word": "Chicken",
+      "category": "Animals",
+      "difficulty": 2,
+      "image": "res://assets/words/chicken.png",
+      "audio": "res://assets/audio/voice/chicken.wav",
+      "enabled": true
+    },
+    {
+      "id": 20,
+      "word": "Goat",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/goat.png",
+      "audio": "res://assets/audio/voice/goat.wav",
+      "enabled": true
+    },
+    {
+      "id": 21,
+      "word": "Deer",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/deer.png",
+      "audio": "res://assets/audio/voice/deer.wav",
+      "enabled": true
+    },
+    {
+      "id": 22,
+      "word": "Owl",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/owl.png",
+      "audio": "res://assets/audio/voice/owl.wav",
+      "enabled": true
+    },
+    {
+      "id": 23,
+      "word": "Fox",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/fox.png",
+      "audio": "res://assets/audio/voice/fox.wav",
+      "enabled": true
+    },
+    {
+      "id": 24,
+      "word": "Wolf",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/wolf.png",
+      "audio": "res://assets/audio/voice/wolf.wav",
+      "enabled": true
+    },
+    {
+      "id": 25,
+      "word": "Bee",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/bee.png",
+      "audio": "res://assets/audio/voice/bee.wav",
+      "enabled": true
+    },
+    {
+      "id": 26,
+      "word": "Ant",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/ant.png",
+      "audio": "res://assets/audio/voice/ant.wav",
+      "enabled": true
+    },
+    {
+      "id": 27,
+      "word": "Spider",
+      "category": "Animals",
+      "difficulty": 2,
+      "image": "res://assets/words/spider.png",
+      "audio": "res://assets/audio/voice/spider.wav",
+      "enabled": true
+    },
+    {
+      "id": 28,
+      "word": "Turtle",
+      "category": "Animals",
+      "difficulty": 2,
+      "image": "res://assets/words/turtle.png",
+      "audio": "res://assets/audio/voice/turtle.wav",
+      "enabled": true
+    },
+    {
+      "id": 29,
+      "word": "Whale",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/whale.png",
+      "audio": "res://assets/audio/voice/whale.wav",
+      "enabled": true
+    },
+    {
+      "id": 30,
+      "word": "Shark",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/shark.png",
+      "audio": "res://assets/audio/voice/shark.wav",
+      "enabled": true
+    },
+    {
+      "id": 31,
+      "word": "Crab",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/crab.png",
+      "audio": "res://assets/audio/voice/crab.wav",
+      "enabled": true
+    },
+    {
+      "id": 32,
+      "word": "Butterfly",
+      "category": "Animals",
+      "difficulty": 3,
+      "image": "res://assets/words/butterfly.png",
+      "audio": "res://assets/audio/voice/butterfly.wav",
+      "enabled": true
+    },
+    {
+      "id": 33,
+      "word": "Penguin",
+      "category": "Animals",
+      "difficulty": 2,
+      "image": "res://assets/words/penguin.png",
+      "audio": "res://assets/audio/voice/penguin.wav",
+      "enabled": true
+    },
+    {
+      "id": 34,
+      "word": "Zebra",
+      "category": "Animals",
+      "difficulty": 1,
+      "image": "res://assets/words/zebra.png",
+      "audio": "res://assets/audio/voice/zebra.wav",
+      "enabled": true
+    },
+    {
+      "id": 35,
+      "word": "Apple",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/apple.png",
+      "audio": "res://assets/audio/voice/apple.wav",
+      "enabled": true
+    },
+    {
+      "id": 36,
+      "word": "Banana",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/banana.png",
+      "audio": "res://assets/audio/voice/banana.wav",
+      "enabled": true
+    },
+    {
+      "id": 37,
+      "word": "Grape",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/grape.png",
+      "audio": "res://assets/audio/voice/grape.wav",
+      "enabled": true
+    },
+    {
+      "id": 38,
+      "word": "Milk",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/milk.png",
+      "audio": "res://assets/audio/voice/milk.wav",
+      "enabled": true
+    },
+    {
+      "id": 39,
+      "word": "Bread",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/bread.png",
+      "audio": "res://assets/audio/voice/bread.wav",
+      "enabled": true
+    },
+    {
+      "id": 40,
+      "word": "Cheese",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/cheese.png",
+      "audio": "res://assets/audio/voice/cheese.wav",
+      "enabled": true
+    },
+    {
+      "id": 41,
+      "word": "Egg",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/egg.png",
+      "audio": "res://assets/audio/voice/egg.wav",
+      "enabled": true
+    },
+    {
+      "id": 42,
+      "word": "Rice",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/rice.png",
+      "audio": "res://assets/audio/voice/rice.wav",
+      "enabled": true
+    },
+    {
+      "id": 43,
+      "word": "Cake",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/cake.png",
+      "audio": "res://assets/audio/voice/cake.wav",
+      "enabled": true
+    },
+    {
+      "id": 44,
+      "word": "Cookie",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/cookie.png",
+      "audio": "res://assets/audio/voice/cookie.wav",
+      "enabled": true
+    },
+    {
+      "id": 45,
+      "word": "Candy",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/candy.png",
+      "audio": "res://assets/audio/voice/candy.wav",
+      "enabled": true
+    },
+    {
+      "id": 46,
+      "word": "Juice",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/juice.png",
+      "audio": "res://assets/audio/voice/juice.wav",
+      "enabled": true
+    },
+    {
+      "id": 47,
+      "word": "Water",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/water.png",
+      "audio": "res://assets/audio/voice/water.wav",
+      "enabled": true
+    },
+    {
+      "id": 48,
+      "word": "Pizza",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/pizza.png",
+      "audio": "res://assets/audio/voice/pizza.wav",
+      "enabled": true
+    },
+    {
+      "id": 49,
+      "word": "Burger",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/burger.png",
+      "audio": "res://assets/audio/voice/burger.wav",
+      "enabled": true
+    },
+    {
+      "id": 50,
+      "word": "Soup",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/soup.png",
+      "audio": "res://assets/audio/voice/soup.wav",
+      "enabled": true
+    },
+    {
+      "id": 51,
+      "word": "Noodle",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/noodle.png",
+      "audio": "res://assets/audio/voice/noodle.wav",
+      "enabled": true
+    },
+    {
+      "id": 52,
+      "word": "Honey",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/honey.png",
+      "audio": "res://assets/audio/voice/honey.wav",
+      "enabled": true
+    },
+    {
+      "id": 53,
+      "word": "Butter",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/butter.png",
+      "audio": "res://assets/audio/voice/butter.wav",
+      "enabled": true
+    },
+    {
+      "id": 54,
+      "word": "Corn",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/corn.png",
+      "audio": "res://assets/audio/voice/corn.wav",
+      "enabled": true
+    },
+    {
+      "id": 55,
+      "word": "Potato",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/potato.png",
+      "audio": "res://assets/audio/voice/potato.wav",
+      "enabled": true
+    },
+    {
+      "id": 56,
+      "word": "Tomato",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/tomato.png",
+      "audio": "res://assets/audio/voice/tomato.wav",
+      "enabled": true
+    },
+    {
+      "id": 57,
+      "word": "Carrot",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/carrot.png",
+      "audio": "res://assets/audio/voice/carrot.wav",
+      "enabled": true
+    },
+    {
+      "id": 58,
+      "word": "Onion",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/onion.png",
+      "audio": "res://assets/audio/voice/onion.wav",
+      "enabled": true
+    },
+    {
+      "id": 59,
+      "word": "Lemon",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/lemon.png",
+      "audio": "res://assets/audio/voice/lemon.wav",
+      "enabled": true
+    },
+    {
+      "id": 60,
+      "word": "Mango",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/mango.png",
+      "audio": "res://assets/audio/voice/mango.wav",
+      "enabled": true
+    },
+    {
+      "id": 61,
+      "word": "Peach",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/peach.png",
+      "audio": "res://assets/audio/voice/peach.wav",
+      "enabled": true
+    },
+    {
+      "id": 62,
+      "word": "Pear",
+      "category": "Food",
+      "difficulty": 1,
+      "image": "res://assets/words/pear.png",
+      "audio": "res://assets/audio/voice/pear.wav",
+      "enabled": true
+    },
+    {
+      "id": 63,
+      "word": "Strawberry",
+      "category": "Food",
+      "difficulty": 3,
+      "image": "res://assets/words/strawberry.png",
+      "audio": "res://assets/audio/voice/strawberry.wav",
+      "enabled": true
+    },
+    {
+      "id": 64,
+      "word": "Watermelon",
+      "category": "Food",
+      "difficulty": 3,
+      "image": "res://assets/words/watermelon.png",
+      "audio": "res://assets/audio/voice/watermelon.wav",
+      "enabled": true
+    },
+    {
+      "id": 65,
+      "word": "Sandwich",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/sandwich.png",
+      "audio": "res://assets/audio/voice/sandwich.wav",
+      "enabled": true
+    },
+    {
+      "id": 66,
+      "word": "Pancake",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/pancake.png",
+      "audio": "res://assets/audio/voice/pancake.wav",
+      "enabled": true
+    },
+    {
+      "id": 67,
+      "word": "Orange",
+      "category": "Food",
+      "difficulty": 2,
+      "image": "res://assets/words/orange.png",
+      "audio": "res://assets/audio/voice/orange.wav",
+      "enabled": true
+    },
+    {
+      "id": 68,
+      "word": "Red",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/red.png",
+      "audio": "res://assets/audio/voice/red.wav",
+      "enabled": true
+    },
+    {
+      "id": 69,
+      "word": "Blue",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/blue.png",
+      "audio": "res://assets/audio/voice/blue.wav",
+      "enabled": true
+    },
+    {
+      "id": 70,
+      "word": "Green",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/green.png",
+      "audio": "res://assets/audio/voice/green.wav",
+      "enabled": true
+    },
+    {
+      "id": 71,
+      "word": "Yellow",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/yellow.png",
+      "audio": "res://assets/audio/voice/yellow.wav",
+      "enabled": true
+    },
+    {
+      "id": 72,
+      "word": "Purple",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/purple.png",
+      "audio": "res://assets/audio/voice/purple.wav",
+      "enabled": true
+    },
+    {
+      "id": 73,
+      "word": "Pink",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/pink.png",
+      "audio": "res://assets/audio/voice/pink.wav",
+      "enabled": true
+    },
+    {
+      "id": 74,
+      "word": "Black",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/black.png",
+      "audio": "res://assets/audio/voice/black.wav",
+      "enabled": true
+    },
+    {
+      "id": 75,
+      "word": "White",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/white.png",
+      "audio": "res://assets/audio/voice/white.wav",
+      "enabled": true
+    },
+    {
+      "id": 76,
+      "word": "Brown",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/brown.png",
+      "audio": "res://assets/audio/voice/brown.wav",
+      "enabled": true
+    },
+    {
+      "id": 77,
+      "word": "Gray",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/gray.png",
+      "audio": "res://assets/audio/voice/gray.wav",
+      "enabled": true
+    },
+    {
+      "id": 78,
+      "word": "Gold",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/gold.png",
+      "audio": "res://assets/audio/voice/gold.wav",
+      "enabled": true
+    },
+    {
+      "id": 79,
+      "word": "Silver",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/silver.png",
+      "audio": "res://assets/audio/voice/silver.wav",
+      "enabled": true
+    },
+    {
+      "id": 80,
+      "word": "Cyan",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/cyan.png",
+      "audio": "res://assets/audio/voice/cyan.wav",
+      "enabled": true
+    },
+    {
+      "id": 81,
+      "word": "Navy",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/navy.png",
+      "audio": "res://assets/audio/voice/navy.wav",
+      "enabled": true
+    },
+    {
+      "id": 82,
+      "word": "Teal",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/teal.png",
+      "audio": "res://assets/audio/voice/teal.wav",
+      "enabled": true
+    },
+    {
+      "id": 83,
+      "word": "Maroon",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/maroon.png",
+      "audio": "res://assets/audio/voice/maroon.wav",
+      "enabled": true
+    },
+    {
+      "id": 84,
+      "word": "Beige",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/beige.png",
+      "audio": "res://assets/audio/voice/beige.wav",
+      "enabled": true
+    },
+    {
+      "id": 85,
+      "word": "Violet",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/violet.png",
+      "audio": "res://assets/audio/voice/violet.wav",
+      "enabled": true
+    },
+    {
+      "id": 86,
+      "word": "Indigo",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/indigo.png",
+      "audio": "res://assets/audio/voice/indigo.wav",
+      "enabled": true
+    },
+    {
+      "id": 87,
+      "word": "Lime",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/lime.png",
+      "audio": "res://assets/audio/voice/lime.wav",
+      "enabled": true
+    },
+    {
+      "id": 88,
+      "word": "Olive",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/olive.png",
+      "audio": "res://assets/audio/voice/olive.wav",
+      "enabled": true
+    },
+    {
+      "id": 89,
+      "word": "Coral",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/coral.png",
+      "audio": "res://assets/audio/voice/coral.wav",
+      "enabled": true
+    },
+    {
+      "id": 90,
+      "word": "Magenta",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/magenta.png",
+      "audio": "res://assets/audio/voice/magenta.wav",
+      "enabled": true
+    },
+    {
+      "id": 91,
+      "word": "Crimson",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/crimson.png",
+      "audio": "res://assets/audio/voice/crimson.wav",
+      "enabled": true
+    },
+    {
+      "id": 92,
+      "word": "Amber",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/amber.png",
+      "audio": "res://assets/audio/voice/amber.wav",
+      "enabled": true
+    },
+    {
+      "id": 93,
+      "word": "Bronze",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/bronze.png",
+      "audio": "res://assets/audio/voice/bronze.wav",
+      "enabled": true
+    },
+    {
+      "id": 94,
+      "word": "Copper",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/copper.png",
+      "audio": "res://assets/audio/voice/copper.wav",
+      "enabled": true
+    },
+    {
+      "id": 95,
+      "word": "Ivory",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/ivory.png",
+      "audio": "res://assets/audio/voice/ivory.wav",
+      "enabled": true
+    },
+    {
+      "id": 96,
+      "word": "Lavender",
+      "category": "Colors",
+      "difficulty": 2,
+      "image": "res://assets/words/lavender.png",
+      "audio": "res://assets/audio/voice/lavender.wav",
+      "enabled": true
+    },
+    {
+      "id": 97,
+      "word": "Mint",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/mint.png",
+      "audio": "res://assets/audio/voice/mint.wav",
+      "enabled": true
+    },
+    {
+      "id": 98,
+      "word": "Turquoise",
+      "category": "Colors",
+      "difficulty": 3,
+      "image": "res://assets/words/turquoise.png",
+      "audio": "res://assets/audio/voice/turquoise.wav",
+      "enabled": true
+    },
+    {
+      "id": 99,
+      "word": "Khaki",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/khaki.png",
+      "audio": "res://assets/audio/voice/khaki.wav",
+      "enabled": true
+    },
+    {
+      "id": 100,
+      "word": "Tan",
+      "category": "Colors",
+      "difficulty": 1,
+      "image": "res://assets/words/tan.png",
+      "audio": "res://assets/audio/voice/tan.wav",
+      "enabled": true
+    }
+  ]
+}
