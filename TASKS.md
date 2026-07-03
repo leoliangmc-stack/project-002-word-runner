@@ -18,5 +18,7 @@
 - [x] Polish animations
 - [x] Sound effects
 - [x] Art asset loading (player/gate/background swap in from PNG, placeholder fallback)
+- [x] Touch controls for mobile/web (tap left/right half of screen)
+- [x] Web export + itch.io deployment (https://leobaba.itch.io/word-runner)
 
 When completed, change [ ] to [x].

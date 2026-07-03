@@ -46,10 +46,20 @@ func compute_lane_positions(viewport_width: float) -> Array[float]:
 		positions.append(viewport_width * (i + 1) / float(LANE_COUNT + 1))
 	return positions
 
+## Keyboard for desktop; tapping the left/right half of the screen for touch
+## devices (phones have no keyboard, so this is the only way to play there).
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_left"):
 		move_to_lane(current_lane - 1)
 	elif event.is_action_pressed("ui_right"):
+		move_to_lane(current_lane + 1)
+	elif event is InputEventScreenTouch and event.pressed:
+		_handle_touch(event.position)
+
+func _handle_touch(touch_position: Vector2) -> void:
+	if touch_position.x < get_viewport_rect().size.x / 2.0:
+		move_to_lane(current_lane - 1)
+	else:
 		move_to_lane(current_lane + 1)
 
 func move_to_lane(lane_index: int) -> void:

@@ -30,6 +30,21 @@ Example
 
 ---
 
+# Version 1.2.5
+
+## Added
+
+- Touch controls: tapping the left/right half of the screen switches lanes, same as the arrow keys. Phones (e.g. the itch.io web build opened in mobile Safari) have no keyboard, so this was the only way to play there before this change.
+- `export_presets.cfg`: Web (HTML5) export preset, single-threaded (no cross-origin-isolation headers required, so it works on itch.io's standard embed).
+- New touch_input_test.gd / TouchInputTestScene.tscn smoke test.
+
+## Notes
+
+- Verified test_player, the new touch input test, and feedback smoke tests pass, and Game.tscn runs headless with no errors.
+- Exported and pushed the web build to https://leobaba.itch.io/word-runner via butler.
+
+---
+
 # Version 1.2.4
 
 ## Fixed
