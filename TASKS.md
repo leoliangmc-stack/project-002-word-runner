@@ -18,7 +18,8 @@
 - [x] Polish animations
 - [x] Sound effects
 - [x] Art asset loading (player/gate/background swap in from PNG, placeholder fallback)
-- [x] Touch controls for mobile/web (tap left/right half of screen)
+- [x] Touch controls for mobile/web (tap left/right half of screen, or press-and-slide to drag between lanes)
 - [x] Web export + itch.io deployment (https://leobaba.itch.io/word-runner)
+- [x] Fix lives HUD showing raw codepoint "2665" instead of a heart (font lacked the ♥ glyph; hearts are now drawn as vector shapes)
 
 When completed, change [ ] to [x].

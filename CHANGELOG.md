@@ -30,6 +30,23 @@ Example
 
 ---
 
+# Version 1.2.6
+
+## Fixed
+
+- Lives HUD showed the raw codepoint "2665" instead of a heart: the runtime font has no glyph for U+2665, so it fell back to printing the hex codepoint. `LivesLabel` (Label with `♥` text) replaced with `LivesDisplay` (`scripts/ui/HeartsDisplay.gd`, a `Control` that draws hearts as a vector polygon), which no longer depends on font glyph coverage.
+
+## Added
+
+- Press-and-slide touch control: dragging a finger across the screen shifts lanes every 80px of horizontal movement, in addition to the existing tap-to-move. `Player.gd` distinguishes a tap (release near the press point) from a drag using a 20px threshold.
+- `project.godot`: `pointing/emulate_touch_from_mouse=true`, so drag/tap controls can be tested with a mouse in the editor.
+
+## Notes
+
+- Updated hud_test.gd and touch_input_test.gd for the new APIs; verified by static review (Godot editor was already open/running in this environment, so an additional headless run was skipped to avoid disrupting it).
+
+---
+
 # Version 1.2.5
 
 ## Added

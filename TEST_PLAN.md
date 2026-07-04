@@ -7,8 +7,10 @@
 - One gate matches spoken word.
 - Correct gate increases score.
 - Wrong gate removes one heart.
+- Hearts render as heart shapes, not raw codepoint text.
 - Game ends at zero hearts.
 - Endless mode never soft-locks.
+- Tapping a screen half moves one lane; pressing and sliding drags between lanes.
 
 ## Performance
 

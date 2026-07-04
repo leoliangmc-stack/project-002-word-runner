@@ -5,7 +5,7 @@ const BACKGROUND_ART_PATH := "res://assets/backgrounds/grass.png"
 @onready var player: Node2D = $Player
 @onready var gate_spawner: Node2D = $GateSpawner
 @onready var score_label: Label = $HUD/ScoreLabel
-@onready var lives_label: Label = $HUD/LivesLabel
+@onready var lives_display: Control = $HUD/LivesDisplay
 @onready var camera: Camera2D = $Camera2D
 @onready var flash_overlay: ColorRect = $FlashOverlay
 @onready var background_art: TextureRect = $BackgroundArt
@@ -13,7 +13,7 @@ const BACKGROUND_ART_PATH := "res://assets/backgrounds/grass.png"
 func _ready() -> void:
 	_load_background()
 	score_label.pivot_offset = score_label.size / 2.0
-	lives_label.pivot_offset = lives_label.size / 2.0
+	lives_display.pivot_offset = lives_display.size / 2.0
 
 	GameManager.reset()
 	GameManager.score_changed.connect(_on_score_changed)
@@ -70,13 +70,13 @@ func _on_score_changed(new_score: int) -> void:
 	t.tween_property(score_label, "scale", Vector2.ONE, 0.25).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 
 func _on_lives_changed(new_lives: int) -> void:
-	lives_label.text = "♥".repeat(new_lives)
-	var base_x := lives_label.position.x
+	lives_display.set_lives(new_lives)
+	var base_x := lives_display.position.x
 	var t := create_tween()
 	for i in range(4):
 		var offset := 8.0 if i % 2 == 0 else -8.0
-		t.tween_property(lives_label, "position:x", base_x + offset, 0.05)
-	t.tween_property(lives_label, "position:x", base_x, 0.05)
+		t.tween_property(lives_display, "position:x", base_x + offset, 0.05)
+	t.tween_property(lives_display, "position:x", base_x, 0.05)
 
 func _on_game_over() -> void:
 	gate_spawner.stop()

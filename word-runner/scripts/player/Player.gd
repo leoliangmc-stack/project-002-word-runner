@@ -7,9 +7,17 @@ const LANE_COUNT := 3
 const MOVE_DURATION := 0.15
 const ART_PATH := "res://assets/player/player_idle.png"
 
+## Below this, a touch is treated as a tap (see _handle_touch); at or above it,
+## it counts as a drag/slide (see _handle_drag).
+const TAP_MAX_DISTANCE := 20.0
+## Horizontal drag distance needed to slide one lane over.
+const SWIPE_LANE_DISTANCE := 80.0
+
 var current_lane: int = 1
 var lane_positions: Array[float] = []
 var _move_tween: Tween
+var _touch_start_position: Vector2 = Vector2.ZERO
+var _drag_accumulated: float = 0.0
 
 @onready var visual: Node2D = $Visual
 @onready var body: ColorRect = $Visual/Body
@@ -46,21 +54,46 @@ func compute_lane_positions(viewport_width: float) -> Array[float]:
 		positions.append(viewport_width * (i + 1) / float(LANE_COUNT + 1))
 	return positions
 
-## Keyboard for desktop; tapping the left/right half of the screen for touch
-## devices (phones have no keyboard, so this is the only way to play there).
+## Keyboard for desktop; tapping or press-and-slide on touch devices (phones
+## have no keyboard, so this is the only way to play there).
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_left"):
 		move_to_lane(current_lane - 1)
 	elif event.is_action_pressed("ui_right"):
 		move_to_lane(current_lane + 1)
-	elif event is InputEventScreenTouch and event.pressed:
-		_handle_touch(event.position)
+	elif event is InputEventScreenTouch:
+		if event.pressed:
+			_touch_start_position = event.position
+			_drag_accumulated = 0.0
+		else:
+			_handle_touch_release(event.position)
+	elif event is InputEventScreenDrag:
+		_handle_drag(event.relative.x)
+
+## A touch that ends near where it started is a tap: jump one lane toward
+## whichever half of the screen was touched.
+func _handle_touch_release(touch_position: Vector2) -> void:
+	if absf(touch_position.x - _touch_start_position.x) >= TAP_MAX_DISTANCE:
+		return
+	_handle_touch(touch_position)
 
 func _handle_touch(touch_position: Vector2) -> void:
 	if touch_position.x < get_viewport_rect().size.x / 2.0:
 		move_to_lane(current_lane - 1)
 	else:
 		move_to_lane(current_lane + 1)
+
+## Sliding a finger while holding the screen shifts one lane per
+## SWIPE_LANE_DISTANCE crossed, carrying over the remainder for fast slides
+## that span more than one lane.
+func _handle_drag(delta_x: float) -> void:
+	_drag_accumulated += delta_x
+	while _drag_accumulated >= SWIPE_LANE_DISTANCE:
+		move_to_lane(current_lane + 1)
+		_drag_accumulated -= SWIPE_LANE_DISTANCE
+	while _drag_accumulated <= -SWIPE_LANE_DISTANCE:
+		move_to_lane(current_lane - 1)
+		_drag_accumulated += SWIPE_LANE_DISTANCE
 
 func move_to_lane(lane_index: int) -> void:
 	lane_index = clampi(lane_index, 0, LANE_COUNT - 1)
