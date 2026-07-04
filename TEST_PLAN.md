@@ -11,6 +11,7 @@
 - Game ends at zero hearts.
 - Endless mode never soft-locks.
 - Tapping a screen half moves one lane; pressing and sliding drags between lanes.
+- Touches anywhere inside the play area reach the player (no Control node swallows them).
 
 ## Performance
 

@@ -14,18 +14,21 @@ position = Vector2(576, 324)
 [node name="Background" type="ColorRect" parent="."]
 offset_right = 1152.0
 offset_bottom = 648.0
+mouse_filter = 2
 color = Color(0.9607843, 0.9607843, 0.9607843, 1)
 
 [node name="BackgroundArt" type="TextureRect" parent="."]
 visible = false
 offset_right = 1152.0
 offset_bottom = 648.0
+mouse_filter = 2
 expand_mode = 1
 stretch_mode = 6
 
 [node name="HUD" type="Control" parent="."]
 offset_right = 1152.0
 offset_bottom = 648.0
+mouse_filter = 2
 
 [node name="ScoreLabel" type="Label" parent="HUD"]
 offset_left = 470.0

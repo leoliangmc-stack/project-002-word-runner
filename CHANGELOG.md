@@ -30,6 +30,22 @@ Example
 
 ---
 
+# Version 1.2.7
+
+## Fixed
+
+- Touch controls did nothing inside the play area (reported on Safari, actually browser-independent): `Background` (ColorRect) and `HUD` (Control) in `Game.tscn` cover the full 1152x648 design rect and kept the default `mouse_filter = STOP`, so they consumed touches before `Player._unhandled_input` saw them. On tall phone screens the stretched viewport (aspect "expand") exposes uncovered area below y=648, which is why touch only worked below the visible play field. Both nodes (plus the currently hidden `BackgroundArt`) now use `mouse_filter = IGNORE`, matching `LivesDisplay` and `FlashOverlay`.
+
+## Added
+
+- Scene-composition regression test game_scene_touch_test.gd / GameSceneTouchTestScene.tscn: instantiates the full `Game.tscn` and pushes real `InputEventScreenTouch` events through the viewport, verifying taps inside the play area move the player. The existing touch_input_test.gd only exercised `Player` handlers directly, which is why it stayed green while the shipped game was unplayable by touch.
+
+## Notes
+
+- All 10 headless test scenes pass; web build re-exported to `build/web/`.
+
+---
+
 # Version 1.2.6
 
 ## Fixed
